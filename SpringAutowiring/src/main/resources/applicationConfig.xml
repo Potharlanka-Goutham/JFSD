@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!-- Student Bean  -->
+
+<bean id="studentbean" class="com.klef.jfsd.exam.Student">
+
+<property name="id" value="101"></property>
+<property name="name" value="GOUTHAM"></property>
+<property name="age" value="19"></property>
+<property name="gender" value="MALE"></property>
+
+<property name="counselor" ref="counselorbean"></property>
+
+
+</bean>
+
+
+<!-- Faculty Bean  -->
+
+<bean id="counselorbean" class="com.klef.jfsd.exam.Counselor">
+
+<property name="id" value="1001"></property>
+<property name="name" value="Arpit Jain"></property>
+<property name="department" value="Mech"></property>
+<property name="contactno" value="9922454666"></property>
+
+
+
+</bean>
+
+
+</beans>
